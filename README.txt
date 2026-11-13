@@ -1,17 +1,19 @@
-NOTIZRAUM 0.2 – iPhone-Prototyp
+NOTIZRAUM 0.3 – iPhone-Prototyp
 
-Enthalten:
-- Vier feste Bereiche: Home, Kalender, Notizen, Ordner
-- Home-Dashboard mit Widget-Typen (Daily Reminder, Poster, freies Widget)
-- Widgets verschieben (Pfeiltasten), Größe wechseln und benennen
-- Kalender mit Wochen- und Monatsansicht
-- Einfache Notizen
-- Ordner und Unterordner
-- Lokaler Dateiimport; PDF/Bilder können je nach iOS-Dateityp geöffnet werden, andere Dateien werden als Anhang gespeichert
-- Name, Datum, Spruch, Schriftgröße
-- Backup-Export
+Änderungen:
+- Home-Grid mit 6 Spalten und frei positionierbaren Flächen
+- Flächen verschieben: Griff links oben gedrückt halten und ziehen
+- Größe ändern: Ecke unten rechts ziehen
+- Maximal 6 Grid-Spalten breit und 8 Grid-Zeilen hoch
+- Fläche antippen: Bild aus Fotos/Galerie oder Datei hinzufügen
+- Bildzuschnitt mit Zoom sowie horizontaler/vertikaler Position
+- Kalender: Tages-, Wochen- und Monatsansicht
+- Tage mit Tippen auf Wochentag oder Vor/Zurück wechseln
+- Tagesnotizen werden lokal gespeichert und in der Wochenübersicht angezeigt
+- Bestehende Grundbereiche Home, Kalender, Notizen, Ordner
+
+Update:
+Ersetze im bestehenden GitHub-Repository die alte index.html mit dieser index.html und committe die Änderung.
 
 WICHTIG:
-Dies ist ein früher Web-Prototyp. Die Dateien und Daten werden lokal im Browserprofil gespeichert. Löschen der Safari-Websitedaten kann lokale Inhalte entfernen. Vor dem Testen bitte ein Backup exportieren.
-Für GitHub Pages: index.html im Hauptverzeichnis des bestehenden Repositorys hochladen und committen; dadurch wird dieselbe App-Adresse aktualisiert.
-Die Datei enthält noch keinen Service Worker und kein PWA-Manifest. Vollständige Offline-Installation und robuste Dateispeicherung sind nächste Ausbaustufen.
+Dies ist ein früher Prototyp. Vor dem Update bitte ein Backup exportieren. Beim Testen großer Bilder kann localStorage schnell an seine Speichergrenze kommen. Große Bilddateien daher nur testweise verwenden; als nächste technische Ausbaustufe sollten wir IndexedDB für Bilder/Dateien verwenden. Daten bleiben browserlokal und werden nicht an einen Cloud-Server gesendet.
